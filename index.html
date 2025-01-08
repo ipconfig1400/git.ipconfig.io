@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Momo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="../icons/menu-icons/food-icon-3-png.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- search bar -->
+    <div class="border-bottom">
+        <div class="d-flex align-items-center justify-content-space-between">
+            <!-- Back -->
+            <div class="">
+                <div onclick="backButton()">
+                    <img class="navbar-product-back-icon m-10" src="../icons/arrow-left-short.svg" alt="">
+                </div>
+            </div>
+            <!-- search -->
+            <div class="width-50">
+                <form class="d-flex justify-content-space-between align-items-center bg-light width-100 border-rounded-5">
+                    <input type="text" name="search" placeholder="Pesan apa?" class="font-monospace p-10 width-90 border-focus-none border-none border-bottom">
+                    <button type="submit" class="bg-light border-none me-10">
+                        <img src="../icons/search.svg" alt="">
+                    </button>
+                </form>
+            </div>
+            <!-- cart -->
+            <a href="" class="no-link">
+                <div class="d-flex justify-content-flex-end">
+                    <img class="navbar-product-icon m-10 " src="../icons/cart3.svg" alt="">
+                    <div class="font-monospace bg-scarlet d-flex justify-content-center align-content-center height-auto aspect-ratio-1-1 position-absolute no-link-light border-circle m-5" style="width: 18px;"><b>1</b></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div class="">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="width-50 navbar-product ani-3ms">
+                <div class="navbar-product-container d-flex justify-content-space-evenly align-items-center bg-light width-100 border-rounded-top bg-scarlet font-monospace">
+                    <div class="p-10">
+                        <a href="" class="navbar-product-link no-link-light">Beranda</a>
+                    </div>
+                    <div class="p-10">
+                        <a href="" class="navbar-product-link no-link-light">Recommended</a>
+                    </div>
+                    <div class="p-10">
+                        <a href="" class="navbar-product-link no-link-light">Kategori</a>
+                    </div>
+                    <div class="p-10">
+                        <a href="" class="navbar-product-link no-link-light">Isi Sendiri</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div>
+        <div class="d-flex justify-content-center align-items-center mt-30">
+            <h1>Pesen yuk!</h1>
+        </div>
+    </div>
+    <form>
+        <!-- Recommended -->
+        <div class="ms-1 me-1">
+            <div class="font-rubik">
+                <h3>Rekomended banget!</h3>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap bg-cl-light border-rounded-10">
+                <!-- Items -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items2 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items3 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- Aneka Ayam -->
+        <div class="m-1">
+            <div class="font-rubik">
+                <h3>Aneka Ayam</h3>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap bg-cl-light border-rounded-10">
+                <!-- Items -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items2 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items3 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- Promote -->
+        <div class="mt-40 p-10 d-flex justify-content-center bg-scarlet no-link-light font-rubik">
+            <div class="t-align-center">
+                <b class="f-size-5 promote-product">Pondok Momo</b>
+                <p class="d-flex align-items-center address-product">
+                    <a href="https://maps.app.goo.gl/wLrvR9ydWKSdoBUN6">
+                        <img src="../icons/geo-alt-fill.svg" alt="" class="address-icon m-5 img-color-white">
+                    </a>Jl. Panca Usaha 2286-2432, 5 Ulu, Kecamatan Seberang Ulu I, Kota Palembang, Sumatera Selatan 30267
+                </p>
+            </div>
+        </div>
+        <!-- Nasi Goreng -->
+        <div class="m-1">
+            <div class="font-rubik">
+                <h3>Nasi Goreng</h3>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap bg-cl-light border-rounded-10">
+                <!-- Items -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items2 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items3 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- Aneka Mie -->
+        <div class="m-1">
+            <div class="font-rubik">
+                <h3>Aneka Mie</h3>
+            </div>
+            <div class="d-flex justify-content-center flex-wrap bg-cl-light border-rounded-10">
+                <!-- Items -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items2 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+                <!-- Items3 -->
+                <a href="" class="no-link border border-light border-rounded-5 m-10 p-5 items-border-product bg-light d-flex align-items-center font-rubik">
+                    <img src="../img/mie-aceh.jpg" alt="" class="items-product-image height-auto obj-fit-cover aspect-ratio-1-1 border-rounded-5">
+                    <span class="m-5">
+                        <div>
+                            <div class="f-size-3">
+                                <b class="truncate-overflow">Mie Aceh</b>
+                            </div>
+                            <div>Rp12.000</div>
+                            <div class="truncate-overflow f-size-0-5">Mie Aceh + Kerupuk + Telur + Sayur + Lalapan + Nasi</div>
+                        </div>
+                        <div class="m-5">
+                            <button type="submit" class="add-button-product width-100 p-5 border border-light border-rounded-10 bg-none button-hover-scarlet ani-3ms font-rubik d-flex justify-content-center align-items-center">
+                                <img src="../icons/bag-fill.svg" alt="" class="add-button-icon-product m-5">
+                                <b>Tambah</b>
+                            </button>
+                        </div>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </form>
+    <!-- footer -->
+    <div class="footer-container mt-40">
+        <div class="height-50 d-flex justify-content-space-evenly align-items-center flex-wrap">
+            <div class="width-100 d-flex justify-content-center">
+                <div class="t-align-center">
+                    <div class="m-5">
+                        <div class="m-20">
+                            <div class="">
+                                <img src="../icons/menu-icons/food-icon-3-png.png" alt="" class="footer-icon aspect-ratio-1-1 border-circle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-5">
+                        <a href=""><img class="img-color-white m-5" src="../icons/instagram.svg" alt=""></a>
+                        <a href=""><img class="img-color-white m-5" src="../icons/facebook.svg" alt=""></a>
+                        <a href=""><img class="img-color-white m-5" src="../icons/twitter-x.svg" alt=""></a>
+                        <a href=""><img class="img-color-white m-5" src="../icons/tiktok.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h3>Tentang Kami</h3>
+                    <p>Bantuan</p>
+                    <p>Kebijakan</p>
+                    <p>Privasi</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h3>Hubungi Kami</h3>
+                    <p>email@email.com</p>
+                    <p>+628</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h3>Kerja Sama</h3>
+                    <p>GoPay</p>
+                    <p>QRIS</p>
+                    <p>Bank Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <div class="height-50 bottom-0 d-flex justify-content-center align-items-center font-monospace">
+            <div>&copy;IPconfig | 2024</div>
+        </div>
+    </div>
+</body>
+</html>
