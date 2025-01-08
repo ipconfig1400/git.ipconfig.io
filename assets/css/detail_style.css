@@ -1,0 +1,33 @@
+.detail-pict {
+    width: 300px;
+}
+.detail-shipment {
+    height: 0px;
+    overflow: hidden;
+}
+.ext-shipment-button:active + .detail-shipment {
+    height: 20px;
+    transition: ease-in 0.2s;
+}
+.truncate-detail-title {
+    max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.truncate-overflow-detail {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media (max-width: 768px) {
+    .detail-desc {
+        width: 100%;
+    }
+    .detail-pict {
+        width: 100%;
+        height: 300px;
+        aspect-ratio: 0;
+    }
+}
